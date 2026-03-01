@@ -10,29 +10,23 @@ on:
         steps:
           - name: checkout code
             run : echo "Code Clone from GitHub"
-
-       bulid: 
+      bulid: 
          runs-on: ubuntu-latest
          steps:
            - name : Build Docker Container
              run: echo "Decker Container Build"
-
-        test: 
-          runs-on: ubuntu-latest
-
-          steps: 
+      test: 
+         runs-on: ubuntu-latest
+    steps: 
              - name: test the container
-               run: echo " Testing the container"
-
-
-          deploy:
-            runs-on: ubuntu-latest
-
-            steps:
+               run : echo "Testing the container"
+     deploy:
+             runs-on: ubuntu-latest
+             steps:
               - name: Deploying the app
                 run: echo "Docket compose deploy the app"
 
-                
+                 
 
 
 
