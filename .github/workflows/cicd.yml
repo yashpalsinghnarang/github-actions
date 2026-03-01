@@ -2,7 +2,7 @@ name : CICD
 
 on:
   workflow_dispatch:
-
+  
     jobs:
 
       code: 
@@ -20,7 +20,7 @@ on:
     steps: 
              - name: test the container
                run : echo "Testing the container"
-     deploy:
+    deploy:
              runs-on: ubuntu-latest
              steps:
               - name: Deploying the app
